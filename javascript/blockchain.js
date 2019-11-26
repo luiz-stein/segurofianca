@@ -59,7 +59,7 @@ function encerrarContrato()
             .then((resultado)=>
             {
                 buscaFimContrato();
-                textoEncerrar.innerHTML="contrato encerrado....";
+                //textoEncerrar.innerHTML="contrato encerrado....";
             })
             .catch((err) =>
             {
