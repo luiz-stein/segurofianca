@@ -1,4 +1,4 @@
-var enderecoContrato = "0x165586EaF38B8274a96bcF7CcF03A5a0729DA833";
+var enderecoContrato = "0x129970AD523b347A8302429a7F6E5D5298130a87";
 var provedor = new ethers.providers.Web3Provider(web3.currentProvider);
 ethereum.enable();
 var signatario = provedor.getSigner(); //busca a assinatura da chave privada
