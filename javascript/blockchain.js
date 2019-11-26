@@ -47,11 +47,11 @@ function buscaStatusContrato() {
 
 function encerrarContrato()
 {
-    var textoEncerrar = document.getElementById("frmEncerrar");
+    var textoEncerrar = document.getElementById("encerrarContratoTx");
 
     textoEncerrar.innerHTML="conectando para encerramento de contrato ...";
     contrato.fimDoContrato()
-        .then( (trasacao)=>
+        .then( (transacao)=>
         {
             console.log("encerrarContrato - Transacao", transacao);
             textoEncerrar.innerHTML="encerrando o contrato ...";
