@@ -44,3 +44,22 @@ function buscaStatusContrato() {
         campoStatus.innerHTML = err;
     });
 }
+/*
+function encerrarContrato()
+{
+    var textoEncerrar = document.getElementById("frmfrmEncerrar");
+
+    textoEncerrar.innerHTML="conectando para encerramento de contrato ...";
+    contrato.fimDoContrato().then( (trasacao)=>
+        {
+            console.log("encerrarContrato - Transacao", transacao);
+            textoEncerrar.innerHTML="encerrando o contrato ...";
+            transacao.wait()
+                            .then((resultado)=>
+                            {
+
+                            })
+        }     )
+    
+}
+*/
