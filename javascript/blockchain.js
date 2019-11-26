@@ -54,25 +54,25 @@ function encerrarContrato()
     .then( (transacao)=>
     {
             console.log("encerrarContrato - Transacao", transacao);
-            textoEncerrar.innerHTML="encerrando o contrato ...";
+            textoEncerrar.innerHTML="aguarde encerrando o contrato ...";
+        
             transacao.wait()
             .then((resultado)=>
             {
                 buscaFimContrato();
-                //textoEncerrar.innerHTML="contrato encerrado....";
             })
             .catch((err) =>
             {
                 console.error("encerrarContrato - Aguardando tx ser minerada");
                 console.error(err);
-                textoEncerrar.innerHTML="erro ao se conectar minerar ....";
+                textoEncerrar.innerHTML="erro ao se conectar ...";
             })
      })
      .catch((err)=>
      {
             console.error("encerrarContrato - Aguardando tx ser minerada");
             console.error(err);
-            textoEncerrar.innerHTML="erro ao se conectar minerar ....";
+            textoEncerrar.innerHTML="erro ao se conectar ...";
      })
 }
 
