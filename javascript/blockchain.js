@@ -82,7 +82,7 @@ function buscaFimContrato() {
     contrato.contratoAtivo()
     .then( (resultado) => 
     {
-        campoStatus.innerHTML = resultado;
+        campoStatus.innerHTML = "contrato encerrado";
     })
     .catch( (err) => {
         console.error(err);
